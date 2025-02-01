@@ -24,7 +24,6 @@ Come mostrato nell'immagine sottostante, con il Flipper Zero e un po' di astuzia
 "Alcuni istituti adottano l'applicazione SICEP sui dispositivi mobili, la quale non consente di aggirare il sistema poiché registra la posizione GPS."
 
 
-
 ```markdown
 
 ```
