@@ -4,13 +4,14 @@
 
 ## 🔗 Link Utili
 
-[![Blog](https://img.shields.io/badge/Blog-erpressa.github.io%2Fblog-blue?style=for-the-badge)](https://erpressa.github.io/blog)
-[![GitHub](https://img.shields.io/badge/GitHub-erpressa-black?style=for-the-badge&logo=github)](https://github.com/erpressa)
+[![Blog](https://img.shields.io/badge/Blog-WiFi-Revenge.github.io%2Fblog-blue?style=for-the-badge)](https://WiFi-Revenge.github.io/blog)
+
+[![GitHub](https://img.shields.io/badge/GitHub-WiFi-Revenge-black?style=for-the-badge&logo=github)](https://github.com/WiFi-Revenge)
 
 
 ## 📚 Argomenti trattati:
 - **Sicurezza WiFi**: 
-Raspberry Pi e hacking etico
+Hacking etico & Raspberry Pi 
 - **Guide**: Tutorial su strumenti di sicurezza informatica
 
 ## 🚀 Descrizione
