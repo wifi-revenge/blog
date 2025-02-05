@@ -4,9 +4,10 @@
 
 ## 🔗 Link Utili
 
-[![Blog](https://img.shields.io/badge/Blog-WiFi-Revenge.github.io%2Fblog-blue?style=for-the-badge)](https://WiFi-Revenge.github.io/blog)
+[![Blog](https://img.shields.io/badge/Blog-WiFi--Revenge.github.io%2Fblog-blue?style=for-the-badge)](https://WiFi-Revenge.github.io/blog)
 
-[![GitHub](https://img.shields.io/badge/GitHub-WiFi-Revenge-black?style=for-the-badge&logo=github)](https://github.com/WiFi-Revenge)
+[![GitHub](https://img.shields.io/badge/GitHub-WiFi--Revenge-black?style=for-the-badge&logo=github)](https://github.com/WiFi-Revenge)
+
 
 
 ## 📚 Argomenti trattati:
