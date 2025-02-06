@@ -1,5 +1,5 @@
 ---
-title: Installare Manjaro su Termux con proot-distro senza root
+title: Installare Manjaro su Termux senza root
 description: Guida passo passo per installare Manjaro su Termux utilizzando proot-distro.
 date: 2025-02-06
 image: 1.png
@@ -65,6 +65,12 @@ proot-distro login manjaro
 pd login manjaro
 ```
 ![Image 4](4.jpg)
+
+## Per rimuovere manjaro
+
+```bash
+proot-distro remove manjaro
+```
 
 ## Guarda il video
 
