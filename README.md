@@ -18,3 +18,8 @@ Hacking etico & Raspberry Pi
 ## 🚀 Descrizione
 Benvenuti nel mio blog!
 Qui condivido articoli personali sulla sicurezza informatica, hacking etico e altro ancora.
+
+## ☕ Buy Me a Coffee  
+Se ti piace il mio blog, puoi offrirmi un caffè!  
+
+[![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg)](https://paypal.me/CristianoGiannini?country.x=IT&locale.x=it_IT)
