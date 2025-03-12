@@ -31,3 +31,8 @@ links:
 ```
 
 `image` field accepts both local and external images.
+
+<a class="bmc-button" target="_blank" href="https://paypal.me/CristianoGiannini?country.x=IT&locale.x=it_IT">
+    <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee">
+    <span>Buy me a coffee</span>
+</a>
