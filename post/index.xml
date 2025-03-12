@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on coming soon</title><link>https://wifi-revenge.github.io/blog/post/</link><description>Recent content in Posts on coming soon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://wifi-revenge.github.io/blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello</title><link>https://wifi-revenge.github.io/blog/p/hello-world/</link><pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/p/hello-world/</guid><description>&lt;img src="https://wifi-revenge.github.io/blog/p/hello-world/matrix.jpg" alt="Featured image of post Hello" />&lt;p>Questo è il mio spazio personale dove pubblico articoli, guide e progetti su tecnologia, hacking etico e molto altro.&lt;/p>
+&lt;p>Contatti&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>GitHub&lt;/strong>: &lt;a class="link" href="https://github.com/WiFi-Revenge" target="_blank" rel="noopener"
+>WiFi-Revenge&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Instagram&lt;/strong>: &lt;a class="link" href="https://www.instagram.com/cristianogiannini" target="_blank" rel="noopener"
+>cristianogiannini&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
+>Pawel Czerwinski&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash&lt;/a>&lt;/p>&lt;/blockquote></description></item><item><title>Installare Manjaro su Termux senza root</title><link>https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/</link><pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/</guid><description>&lt;img src="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/1.png" alt="Featured image of post Installare Manjaro su Termux senza root" />&lt;h2 id="introduzione">Introduzione
+&lt;/h2>&lt;p>Manjaro è una distribuzione basata su Arch Linux, in questa guida vedremo come installarlo all&amp;rsquo;interno di Termux utilizzando &lt;code>proot-distro&lt;/code>, senza bisogno dei permessi di root.&lt;/p>
+&lt;h2 id="requisiti">Requisiti
+&lt;/h2>&lt;ul>
+&lt;li>&lt;strong>Termux&lt;/strong> installato (meglio dalla versione F-Droid per aggiornamenti regolari)&lt;/li>
+&lt;li>&lt;strong>Spazio libero&lt;/strong> sufficiente per l&amp;rsquo;installazione&lt;/li>
+&lt;li>&lt;strong>Connessione a Internet&lt;/strong> stabile&lt;/li>
+&lt;/ul>
+&lt;h2 id="aggiornare-termux">Aggiornare Termux
+&lt;/h2>&lt;p>Prima di tutto, apri Termux e aggiorna i pacchetti eseguendo:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pkg update &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> pkg upgrade
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="installa-proot-distro-con-pkg">installa proot-distro con pkg
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pkg install proot-distro
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="oppure-con-git">oppure con git
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pkg install git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/termux/proot-distro
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> proot-distro
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./install.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="visualizza-elenco-distro">visualizza elenco distro
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">proot-distro list
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/2.jpg"
+width="1080"
+height="2400"
+srcset="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/2_hu_36502e0a5a325d4f.jpg 480w, https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/2_hu_1acd3b4614339889.jpg 1024w"
+loading="lazy"
+alt="Image 2"
+class="gallery-image"
+data-flex-grow="45"
+data-flex-basis="108px"
+>&lt;/p>
+&lt;h2 id="installa-manjaro">installa manjaro
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">proot-distro install manjaro
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/3.jpg"
+width="1080"
+height="2400"
+srcset="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/3_hu_591024a84c8a0dcb.jpg 480w, https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/3_hu_3a7d78dbe18224cc.jpg 1024w"
+loading="lazy"
+alt="Image 3"
+class="gallery-image"
+data-flex-grow="45"
+data-flex-basis="108px"
+>&lt;/p>
+&lt;h2 id="login">login
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">proot-distro login manjaro
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="oppure">oppure
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pd login manjaro
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/4.jpg"
+width="1080"
+height="2400"
+srcset="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/4_hu_99199591359d387e.jpg 480w, https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/4_hu_8539eb48f4ece55c.jpg 1024w"
+loading="lazy"
+alt="Image 4"
+class="gallery-image"
+data-flex-grow="45"
+data-flex-basis="108px"
+>&lt;/p>
+&lt;h2 id="per-rimuovere-manjaro">Per rimuovere manjaro
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">proot-distro remove manjaro
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="guarda-il-video">Guarda il video
+&lt;/h2>&lt;p>&lt;a class="link" href="https://youtu.be/ONSiOiFmYEc?si=DtZX241fhVq5HX1M" target="_blank" rel="noopener"
+>Guarda il video su YouTube&lt;/a>&lt;/p>
+&lt;h1 id="io-uso-archlinux">Io uso archlinux
+&lt;/h1>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/5.jpg"
+width="1080"
+height="2400"
+srcset="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/5_hu_163108bd39d5f5f5.jpg 480w, https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/5_hu_d157f3b4699f2b39.jpg 1024w"
+loading="lazy"
+alt="Image 5"
+class="gallery-image"
+data-flex-grow="45"
+data-flex-basis="108px"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Grazie per aver letto.&lt;/p></description></item><item><title>Clonare un RFID con Flipper Zero</title><link>https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/</link><pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/</guid><description>&lt;img src="https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/2.jpg" alt="Featured image of post Clonare un RFID con Flipper Zero" />&lt;p>In questo articolo, esploreremo come clonare un tag RFID utilizzando il Flipper Zero e come emularlo successivamente.&lt;/p>
+&lt;p>Facciamo un esempio pratico: immaginiamo un vigilante in servizio che deve completare vari giri di ronda, smarcando i tag RFID che si trovano in diversi punti.
+Come mostrato nell&amp;rsquo;immagine sottostante, con il Flipper Zero e un po&amp;rsquo; di astuzia, qualcuno potrebbe teoricamente &amp;ldquo;imbrogliare&amp;rdquo; e non effettuare il giro di ispezione reale.&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/2.jpg"
+width="370"
+height="213"
+srcset="https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/2_hu_7b0fc2b38da09e81.jpg 480w, https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/2_hu_5b27f381484e1462.jpg 1024w"
+loading="lazy"
+alt="Image 2"
+class="gallery-image"
+data-flex-grow="173"
+data-flex-basis="416px"
+>&lt;/p>
+&lt;h2 id="foto-datix">Foto Datix
+&lt;/h2>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/3.jpg"
+width="2000"
+height="4000"
+srcset="https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/3_hu_e4564fb7a85a6f59.jpg 480w, https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/3_hu_9cf16a654d9a9b9.jpg 1024w"
+loading="lazy"
+alt="Image 3"
+class="gallery-image"
+data-flex-grow="50"
+data-flex-basis="120px"
+>&lt;/p>
+&lt;h2 id="guarda-il-video-di-esempio">Guarda il video di esempio
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.dropbox.com/scl/fi/fsbv5di2e95ypzttv3nuu/Rfid.mp4?rlkey=ol4msudke6g4dgaf6qiewvpaq&amp;amp;e=1&amp;amp;st=h60vbejw&amp;amp;dl=0" target="_blank" rel="noopener"
+>Guarda il video&lt;/a>&lt;/p>
+&lt;p>&amp;ldquo;Alcuni istituti adottano l&amp;rsquo;applicazione SICEP sui dispositivi mobili, la quale non consente di aggirare il sistema poiché registra la posizione GPS.&amp;rdquo;&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Questo articolo è a scopo divulgativo e dimostrativo, per evidenziare i rischi associati alla sicurezza dei sistemi RFID.
+L&amp;rsquo;esempio pratico che abbiamo esplorato con il Flipper Zero non intende incoraggiare attività illecite, ma piuttosto sensibilizzare sull&amp;rsquo;importanza di proteggere e monitorare adeguatamente questi sistemi, evidenziando la necessità di soluzioni più sicure per prevenire possibili abusi.&lt;/p>
+&lt;p>Grazie per aver letto.&lt;/p></description></item></channel></rss>
