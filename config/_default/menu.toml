@@ -16,9 +16,25 @@ url = "https://github.com/wifi-revenge"
 icon = "brand-github"
 
 [[social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com"
+identifier = "linkedin"
+name = "LinkedIn"
+url = "http://www.linkedin.com/in/cristiano-giannini-05228b295"
 
 [social.params]
-icon = "brand-twitter"
+icon = "linkedin"
+
+[[social]]
+identifier = "instagram"
+name = "Instagram"
+url = "https://www.instagram.com/cristianogiannini/"
+
+[social.params]
+icon = "instagram"
+
+[[social]]
+identifier = "discord"
+name = "Discord"
+url = "https://discord.gg/wk6D8pWh"
+
+[social.params]
+icon = "discord"
