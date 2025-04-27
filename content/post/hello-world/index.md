@@ -5,9 +5,9 @@ slug: hello-world
 date: 2024-12-25 00:00:00+0000
 image: matrix.jpg
 categories:
-    - Example Category
+    - intro
 tags:
-    - Example Tag
+    - intro
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
