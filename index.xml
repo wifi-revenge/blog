@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>coming soon</title><link>https://wifi-revenge.github.io/blog/</link><description>Recent content on coming soon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://wifi-revenge.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello</title><link>https://wifi-revenge.github.io/blog/p/hello-world/</link><pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/p/hello-world/</guid><description>&lt;img src="https://wifi-revenge.github.io/blog/p/hello-world/matrix.jpg" alt="Featured image of post Hello" />&lt;p>Questo è il mio spazio personale dove pubblico articoli, guide e progetti su tecnologia, hacking etico e molto altro.&lt;/p>
+&lt;p>Contatti&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>GitHub&lt;/strong>: &lt;a class="link" href="https://github.com/WiFi-Revenge" target="_blank" rel="noopener"
+>WiFi-Revenge&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Instagram&lt;/strong>: &lt;a class="link" href="https://www.instagram.com/cristianogiannini" target="_blank" rel="noopener"
+>cristianogiannini&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
+>Pawel Czerwinski&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash&lt;/a>&lt;/p>&lt;/blockquote></description></item><item><title>Certified Red Team Operator (CRTO)</title><link>https://wifi-revenge.github.io/blog/p/certified-red-team-operator-crto/</link><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/p/certified-red-team-operator-crto/</guid><description>&lt;img src="https://wifi-revenge.github.io/blog/p/certified-red-team-operator-crto/badge.jpg" alt="Featured image of post Certified Red Team Operator (CRTO)" />&lt;h2 id="ho-ottenuto-la-certificazione-crto">Ho ottenuto la certificazione CRTO!🎉
+&lt;/h2>&lt;p>Sono felice di annunciare che ho ufficialmente conseguito la certificazione CRTO (Certified Red Team Operator)!&lt;/p>
+&lt;p>La CRTO è una delle certificazioni più riconosciute nel mondo del Red Teaming e si concentra su tecniche avanzate di attacco, simulazione di minacce reali, bypass dei controlli di sicurezza, C2 frameworks, pivoting e post-exploitation in ambienti Active Directory.&lt;/p>
+&lt;p>-Durante la preparazione ho avuto modo di approfondire:&lt;/p>
+&lt;p>-Attacchi contro infrastrutture Windows e Active Directory&lt;/p>
+&lt;p>-Evasione di antivirus e EDR&lt;/p>
+&lt;p>-Tecniche di movimento laterale, privilege escalation e persistence&lt;/p>
+&lt;p>-Utilizzo di Cobalt Strike e altri strumenti di Red Team e molte altre tecniche avanzate di compromissione e post-exploitation.&lt;/p>
+&lt;p>&lt;a class="link" href="https://training.zeropointsecurity.co.uk/courses/red-team-ops" target="_blank" rel="noopener"
+>https://training.zeropointsecurity.co.uk/courses/red-team-ops&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/certified-red-team-operator-crto/certificate.jpg"
+width="1421"
+height="1066"
+srcset="https://wifi-revenge.github.io/blog/p/certified-red-team-operator-crto/certificate_hu_66e0ef8b3a9265a2.jpg 480w, https://wifi-revenge.github.io/blog/p/certified-red-team-operator-crto/certificate_hu_d7a5d587f9518820.jpg 1024w"
+loading="lazy"
+alt="certificate CRTO"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="319px"
+>&lt;/p></description></item><item><title>Kismet e Wardriving con DragonOS su Raspberry Pi</title><link>https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/</link><pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/</guid><description>&lt;img src="https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/kismet.jpg" alt="Featured image of post Kismet e Wardriving con DragonOS su Raspberry Pi" />&lt;h1 id="kismet">Kismet
+&lt;/h1>&lt;h2 id="parte-1">Parte 1
+&lt;/h2>&lt;p>Kismet è uno strumento di acquisizione wireless estremamente potente e versatile, per l’analisi passiva delle reti.&lt;br>
+Nella sua forma moderna, &lt;strong>Kismet non si limita al solo Wi-Fi&lt;/strong>, ma supporta anche altre tecnologie wireless come &lt;strong>Bluetooth&lt;/strong>, &lt;strong>nRF&lt;/strong>, &lt;strong>433 MHz&lt;/strong>, &lt;strong>ADS-B&lt;/strong>, e perfino i segnali provenienti dai contatori AMR (Automatic Meter Reading), sfruttando l’integrazione con dispositivi &lt;strong>SDR (Software Defined Radio)&lt;/strong>.&lt;/p>
+&lt;p>In questo articolo ci concentreremo &lt;strong>esclusivamente sulle funzionalità Wi-Fi&lt;/strong>, che restano il cuore pulsante del tool.&lt;/p>
+&lt;hr>
+&lt;h2 id="-cosa-fa-esattamente-kismet">🔍 Cosa fa esattamente Kismet?
+&lt;/h2>&lt;p>Kismet opera &lt;strong>in modalità passiva&lt;/strong>, il che significa che non invia pacchetti, ma si limita ad ascoltare tutto ciò che passa “nell’aria”.&lt;br>
+Acquisisce i &lt;strong>frame wireless grezzi&lt;/strong>, li analizza e li decodifica in tempo reale per:&lt;/p>
+&lt;ul>
+&lt;li>Identificare &lt;strong>Access Point (AP)&lt;/strong>, anche se nascosti&lt;/li>
+&lt;li>Rilevare &lt;strong>client associati e non associati&lt;/strong>&lt;/li>
+&lt;li>Analizzare il tipo di cifratura utilizzata (WEP, WPA, WPA2, WPA3)&lt;/li>
+&lt;li>Ricostruire &lt;strong>topologie di rete&lt;/strong>&lt;/li>
+&lt;li>Monitorare attività sospette, come spoofing, beacon flood e altri attacchi&lt;/li>
+&lt;/ul>
+&lt;p>Kismet permette di &lt;strong>visualizzare e salvare i pacchetti&lt;/strong> per analisi successive, offrendo esportazione in vari formati, inclusi &lt;strong>PCAP&lt;/strong> per Wireshark.&lt;/p>
+&lt;hr>
+&lt;h2 id="-geolocalizzazione-kismet-incontra-il-gps">📍 Geolocalizzazione: Kismet incontra il GPS
+&lt;/h2>&lt;p>Se abbinato a un dispositivo GPS , Kismet include anche dati di geolocalizzazione stimati per i dispositivi rilevati.&lt;br>
+Questo è particolarmente utile in contesti di:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Wardriving&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Rilevamento anomalie&lt;/strong> in aree geografiche specifiche&lt;/li>
+&lt;li>&lt;strong>Mappatura della copertura Wi-Fi&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>📌 Nota: La geolocalizzazione è &lt;strong>stimata&lt;/strong> in base alla potenza del segnale e al momento della ricezione, ma fornisce comunque un quadro utile della disposizione spaziale delle reti.&lt;/p>&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="-kismet-su-raspberry-pi-con-dragonos">🐉 Kismet su Raspberry Pi con DragonOS
+&lt;/h2>&lt;p>Sto attualmente utilizzando &lt;strong>Kismet&lt;/strong> su un &lt;strong>Raspberry Pi&lt;/strong> equipaggiato con &lt;strong>DragonOS&lt;/strong>, una distribuzione Linux ottimizzata per applicazioni &lt;strong>SDR&lt;/strong> e di &lt;strong>sicurezza wireless&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>DragonOS&lt;/strong> è basata su Ubuntu ed è famosa per essere &lt;strong>preconfigurata&lt;/strong> con:&lt;/p>
+&lt;ul>
+&lt;li>Software per Software Defined Radio (HackRF, RTL-SDR, LimeSDR, ecc.)&lt;/li>
+&lt;li>Strumenti di sicurezza Wi-Fi (Wireshark, Aircrack-ng, Kismet)&lt;/li>
+&lt;li>Tool di analisi RF, Bluetooth, ADS-B, e molto altro&lt;/li>
+&lt;/ul>
+&lt;p>Questa combinazione — &lt;strong>Kismet + Raspberry Pi + DragonOS&lt;/strong> — permette di realizzare un &lt;strong>kit portatile di rilevamento wireless&lt;/strong>, ideale per:&lt;/p>
+&lt;ul>
+&lt;li>Attività di &lt;strong>wardriving&lt;/strong>&lt;/li>
+&lt;li>Survey di reti Wi-Fi&lt;/li>
+&lt;li>&lt;strong>Monitoraggio ambientale&lt;/strong> di segnali wireless e altro&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="-come-avviare-kismet-su-dragonos">🚀 Come avviare Kismet su DragonOS
+&lt;/h2>&lt;p>Una volta avviato DragonOS sul Raspberry Pi:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Collega una scheda Wi-Fi compatibile con la modalità monitor.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Apri un terminale.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Prima di avviare Kismet, è necessario mettere la scheda Wi-Fi in &lt;strong>modalità monitor&lt;/strong>. Puoi farlo usando &lt;code>airmon-ng&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo airmon-ng start wlan1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo kismet -c wlan1mon
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;p>mi sono collegato in remoto tramite &lt;strong>SSH&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/ssh.png"
+width="3840"
+height="2160"
+srcset="https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/ssh_hu_c2024170d372f04e.png 480w, https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/ssh_hu_5977e1705ca86833.png 1024w"
+loading="lazy"
+alt="Endeavouros"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>o, in alternativa, utilizzando &lt;strong>VNC&lt;/strong> per accedere alla macchina&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/vnc.jpg"
+width="1971"
+height="1312"
+srcset="https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/vnc_hu_1d99d3d233a6c905.jpg 480w, https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/vnc_hu_ac38d611dddfdaf6.jpg 1024w"
+loading="lazy"
+alt="dragonos"
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+>&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/bash.png"
+width="3840"
+height="2160"
+srcset="https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/bash_hu_31b208054f4e4588.png 480w, https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/bash_hu_39c51d8a3efd5740.png 1024w"
+loading="lazy"
+alt="bash"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>Ora puoi aprire il browser e accedere all&amp;rsquo;interfaccia web:&lt;/p>
+&lt;p>Se sei direttamente sul Raspberry Pi: vai su http://localhost:2501&lt;/p>
+&lt;p>Se sei collegato da un altro computer (tramite SSH o VNC): vai su http://IP_DEL_RASPBERRY:2501&lt;/p>
+&lt;p>🔐 Primo accesso: impostazione della password
+Al primo accesso al server web di Kismet, ti verrà richiesto di impostare una password per proteggere l&amp;rsquo;interfaccia.
+Questa password verrà salvata in un file di configurazione (.kismet_httpd.conf) e sarà necessaria per accedere anche in futuro.&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/gui.png"
+width="3840"
+height="2160"
+srcset="https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/gui_hu_184803d1846ca41d.png 480w, https://wifi-revenge.github.io/blog/p/kismet-e-wardriving-con-dragonos-su-raspberry-pi/gui_hu_c4c2227d815be6d4.png 1024w"
+loading="lazy"
+alt="bash"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;hr>
+&lt;p>➡️ &lt;strong>Continua nella prossima parte!&lt;/strong>&lt;/p></description></item><item><title>Server con Raspberry Pi e Jellyfin</title><link>https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/</link><pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/</guid><description>&lt;img src="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/1.jpg" alt="Featured image of post Server con Raspberry Pi e Jellyfin" />&lt;h2 id="come-ho-creato-un-server-multimediale-con-raspberry-pi-4-e-jellyfin">Come ho creato un server multimediale con Raspberry Pi 4 e Jellyfin
+&lt;/h2>&lt;h1 id="introduzione">Introduzione
+&lt;/h1>&lt;p>Volevo un server multimediale leggero, efficiente e open-source per gestire la mia libreria di film e serie TV.
+Ho scelto Jellyfin perché offre ottime funzionalità senza richiedere licenze a pagamento.
+In questo articolo, spiegherò come ho configurato il mio server usando un Raspberry Pi 4.&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/demone.jpg"
+width="1800"
+height="2512"
+srcset="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/demone_hu_f15344cdeae4b749.jpg 480w, https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/demone_hu_67fa859220d9ed4d.jpg 1024w"
+loading="lazy"
+alt="pi4"
+class="gallery-image"
+data-flex-grow="71"
+data-flex-basis="171px"
+>&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/alfa.jpg"
+width="1800"
+height="2520"
+srcset="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/alfa_hu_3f9179e937fd151.jpg 480w, https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/alfa_hu_e57a4f89e7dbde37.jpg 1024w"
+loading="lazy"
+alt="pi4"
+class="gallery-image"
+data-flex-grow="71"
+data-flex-basis="171px"
+>&lt;/p>
+&lt;h1 id="hardware-utilizzato">Hardware utilizzato
+&lt;/h1>&lt;p>• Raspberry Pi 4B (4GB di RAM)&lt;/p>
+&lt;p>• MicroSD (per il sistema operativo)&lt;/p>
+&lt;p>• HDD esterno da 2TB (per i file multimediali) (facoltativo)&lt;/p>
+&lt;p>• Mini Tower NAS kit ZP-0130 (facoltativo)&lt;/p>
+&lt;h1 id="installazione-del-sistema-operativo">Installazione del sistema operativo
+&lt;/h1>&lt;p>Per mantenere il sistema il più leggero e performante possibile, ho scelto di installare Raspberry Pi OS Lite. Questa versione senza interfaccia grafica consente di gestire il server in modo efficiente tramite SSH, senza caricare risorse inutili.
+Tuttavia, se preferisci un&amp;rsquo;interfaccia grafica, puoi optare per la versione Raspberry Pi OS con Desktop, che offre un ambiente grafico completo, perfetto se desideri un&amp;rsquo;esperienza più interattiva e visiva.&lt;/p>
+&lt;p>Ho scaricato l&amp;rsquo;ultima versione di Raspberry Pi OS Lite dal sito ufficiale.&lt;/p>
+&lt;p>Ho usato Raspberry Pi Imager per scrivere l&amp;rsquo;immagine sulla microSD.&lt;/p>
+&lt;p>Dopo aver configurato la rete direttamente dal Raspberry Pi collegato a uno schermo e a una tastiera, ed aver aggiornato il sistema con:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt update &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> sudo apt upgrade -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="installazione-di-docker">Installazione di Docker
+&lt;/h2>&lt;p>Per migliorare la gestione delle applicazioni, ho deciso di installare Docker sul Raspberry Pi.
+Ora puoi procedere con l&amp;rsquo;installazione di Docker e Docker Compose.
+Aggiunta del repository Docker:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">printf&lt;/span> &lt;span class="s1">&amp;#39;%s\n&amp;#39;&lt;/span> &lt;span class="s2">&amp;#34;deb https://download.docker.com/linux/debian bullseye stable&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> sudo tee /etc/apt/sources.list.d/docker-ce.list
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Importazione della chiave GPG ufficiale:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">curl -fsSL https://download.docker.com/linux/debian/gpg &lt;span class="p">|&lt;/span> sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-ce-archive-keyring.gpg
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Installazione di Docker:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install -y docker-ce docker-ce-cli containerd.io
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="installazione-e-configurazione-di-portainer">Installazione e configurazione di Portainer
+&lt;/h2>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/cont.jpg"
+width="3811"
+height="1870"
+srcset="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/cont_hu_2ac30f3ddee86a24.jpg 480w, https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/cont_hu_880973dbce9bd298.jpg 1024w"
+loading="lazy"
+alt="portainer"
+class="gallery-image"
+data-flex-grow="203"
+data-flex-basis="489px"
+>&lt;/p>
+&lt;p>Per semplificare la gestione dei container, ho installato Portainer, un&amp;rsquo;interfaccia grafica per Docker.&lt;/p>
+&lt;p>Creazione del volume per i dati di Portainer:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo docker volume create portainer_data
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Avvio del container Portainer:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart&lt;span class="o">=&lt;/span>always &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -v /var/run/docker.sock:/var/run/docker.sock &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -v portainer_data:/data portainer/portainer-ce:2.21.4
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/dash.jpg"
+width="3831"
+height="1882"
+srcset="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/dash_hu_1f655898f4ec3166.jpg 480w, https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/dash_hu_cda9486fa413a772.jpg 1024w"
+loading="lazy"
+alt="portainer"
+class="gallery-image"
+data-flex-grow="203"
+data-flex-basis="488px"
+>&lt;/p>
+&lt;h2 id="installazione-e-configurazione-di-jellyfin">Installazione e configurazione di Jellyfin
+&lt;/h2>&lt;p>Per configurare Jellyfin come server multimediale, ho seguito questi passaggi:&lt;/p>
+&lt;p>Creazione delle cartelle necessarie
+Prima di avviare il container, ho creato le seguenti cartelle per la configurazione, la cache e i media:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir -p ~/jellyfin_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mkdir -p ~/jellyfin_cache
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mkdir -p ~/media
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="scaricamento-e-avvio-del-container-jellyfin">Scaricamento e Avvio del Container Jellyfin
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">docker run -d &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> --name jellyfin &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -p 8096:8096 &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -v ~/docker_apps/jellyfin/config:/config &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -v ~/docker_apps/jellyfin/cache:/cache &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -v ~/docker_apps/media:/media &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> --restart always &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> jellyfin/jellyfin
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="esempio-dei-miei-container-docker">Esempio dei miei container Docker
+&lt;/h2>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/ps.jpg"
+width="2695"
+height="1378"
+srcset="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/ps_hu_2fd3b095978b2431.jpg 480w, https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/ps_hu_f209ab774434c045.jpg 1024w"
+loading="lazy"
+alt="bash"
+class="gallery-image"
+data-flex-grow="195"
+data-flex-basis="469px"
+>&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/sens.jpg"
+width="2695"
+height="1378"
+srcset="https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/sens_hu_319086ec928561ab.jpg 480w, https://wifi-revenge.github.io/blog/p/server-con-raspberry-pi-e-jellyfin/sens_hu_bbfc1b602922f663.jpg 1024w"
+loading="lazy"
+alt="bash"
+class="gallery-image"
+data-flex-grow="195"
+data-flex-basis="469px"
+>&lt;/p>
+&lt;h2 id="configurazione-di-jellyfin">Configurazione di Jellyfin
+&lt;/h2>&lt;p>Una volta che il container di Jellyfin è stato avviato con successo, non ci resta che completare la configurazione iniziale.&lt;/p>
+&lt;p>Accedi all&amp;rsquo;interfaccia web di Jellyfin:
+Apri il tuo browser e vai all&amp;rsquo;indirizzo http://&lt;indirizzo-ip-del-raspberry-pi>:8096&lt;/p>
+&lt;p>Configurazione guidata:
+Quando accedi per la prima volta, Jellyfin ti guiderà attraverso il processo di configurazione. Ti verrà chiesto di configurare le cartelle per i tuoi media, di creare un account amministratore e di scegliere le preferenze di sistema.&lt;/p>
+&lt;p>Aggiungi i tuoi contenuti:
+Durante la configurazione, puoi aggiungere le cartelle contenenti i tuoi film, serie TV, musica e altri contenuti multimediali, che sono stati precedentemente montati nei volumi del container (~/docker_apps/media).&lt;/p>
+&lt;p>Completa la configurazione:
+Una volta configurato, potrai iniziare a utilizzare Jellyfin per gestire e riprodurre i tuoi contenuti multimediali.&lt;/p>
+&lt;p>Con questa configurazione, Jellyfin sarà pronto per essere utilizzato e potrai accedere al server multimediale da qualsiasi dispositivo sulla tua rete.&lt;/p>
+&lt;h2 id="conclusione-e-supporto">Conclusione e supporto
+&lt;/h2>&lt;p>Jellyfin è ora configurato e pronto per essere utilizzato come server multimediale sul tuo Raspberry Pi. Se hai problemi con l&amp;rsquo;installazione o hai bisogno di supporto, puoi contattarmi via email a &lt;a class="link" href="mailto:cri90.cg@gmail.com" >cri90.cg@gmail.com&lt;/a>. Sarò felice di aiutarti! 😊&lt;/p></description></item><item><title>Certificazione CNPen</title><link>https://wifi-revenge.github.io/blog/p/certificazione-cnpen/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/p/certificazione-cnpen/</guid><description>&lt;h2 id="sono-felice-di-annunciare-che-ho-recentemente-ottenuto-la-certificazione-certified-network-pentester-cnpen-">Sono felice di annunciare che ho recentemente ottenuto la certificazione Certified Network Pentester (CNPen) 🎉
+&lt;/h2>&lt;p>Questa certificazione pratica comprende competenze avanzate nell&amp;rsquo;identificazione e nello sfruttamento delle vulnerabilità, attacchi a Windows Active Directory, tecniche di movimento laterale, attacchi alle password, dumping delle credenziali di sistema, escalation dei privilegi tramite configurazioni di sicurezza errate, sfruttamento di protocollo non sicuri e vulnerabilità nei sistemi Unix, e molto altro.&lt;/p>
+&lt;p>Inoltre, ho acquisito una profonda comprensione delle tecniche di OSINT, mappatura delle reti e identificazione dei target, e ho affinato l&amp;rsquo;uso di strumenti di hacking comuni per testare e proteggere le reti aziendali. Questa certificazione mi ha fornito le competenze necessarie per eseguire test di penetrazione avanzati e affrontare le sfide più complesse nella sicurezza delle reti aziendali.&lt;/p>
+&lt;p>&lt;a class="link" href="https://secops.group/certificate-validation/" target="_blank" rel="noopener"
+>Certificate Validation&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/certificazione-cnpen/CNPen.jpg"
+width="1755"
+height="1240"
+srcset="https://wifi-revenge.github.io/blog/p/certificazione-cnpen/CNPen_hu_aa8b3fd66c19f196.jpg 480w, https://wifi-revenge.github.io/blog/p/certificazione-cnpen/CNPen_hu_8a88a754c03f7bf0.jpg 1024w"
+loading="lazy"
+alt="Image 1"
+class="gallery-image"
+data-flex-grow="141"
+data-flex-basis="339px"
+>&lt;/p></description></item><item><title>Coffee</title><link>https://wifi-revenge.github.io/blog/coffee/</link><pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/coffee/</guid><description>&lt;h2 id="-buy-me-a-coffee">☕ Buy Me a Coffee
+&lt;/h2>&lt;p>Se ti piace il mio blog, puoi offrirmi un caffè!&lt;/p>
+&lt;a class="bmc-button" target="_blank" href="https://paypal.me/CristianoGiannini?country.x=IT&amp;locale.x=it_IT">
+&lt;img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee">
+&lt;span>Buy me a coffee&lt;/span>
+&lt;/a></description></item><item><title>RedWave Team</title><link>https://wifi-revenge.github.io/blog/redwave-team/</link><pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/redwave-team/</guid><description>&lt;h1 id="abbiamo-recentemente-pubblicato-una-rubrica-approfondita-sul-wi-fi-su-redhotcyber">Abbiamo recentemente pubblicato una &lt;strong>rubrica approfondita sul Wi-Fi&lt;/strong> su RedHotCyber.
+&lt;/h1>&lt;p>Per scoprire tutti i dettagli e leggere l&amp;rsquo;articolo completo, visita il seguente link:&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.redhotcyber.com/post/il-wifi-dalle-origini-di-marconi-alla-rete-senza-fili-che-conosciamo-oggi/" target="_blank" rel="noopener"
+>Il Wi-Fi: dalle origini di Marconi alla rete senza fili che conosciamo oggi&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/redwave-team/1.jpg"
+width="505"
+height="476"
+srcset="https://wifi-revenge.github.io/blog/redwave-team/1_hu_65df649e1656f765.jpg 480w, https://wifi-revenge.github.io/blog/redwave-team/1_hu_c2a52dc492767680.jpg 1024w"
+loading="lazy"
+alt="RW"
+class="gallery-image"
+data-flex-grow="106"
+data-flex-basis="254px"
+>&lt;/p>
+&lt;p>RedWave Team è un gruppo di esperti in cybersecurity e reti WiFi della community di Red Hot Cyber, con competenze sia offensive che defensive. Offre una visione completa e multidisciplinare del panorama della sicurezza informatica. Coordinato da Roland Kapidani, Il gruppo è composto da Cristiano Giannini, Francesco Demarcus, Manuel Roccon, Marco Mazzola, Matteo Brandi, Vincenzo Miccoli, Pietro Melillo.&lt;/p></description></item><item><title>Installare Manjaro su Termux senza root</title><link>https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/</link><pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/</guid><description>&lt;img src="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/1.png" alt="Featured image of post Installare Manjaro su Termux senza root" />&lt;h2 id="introduzione">Introduzione
+&lt;/h2>&lt;p>Manjaro è una distribuzione basata su Arch Linux, in questa guida vedremo come installarlo all&amp;rsquo;interno di Termux utilizzando &lt;code>proot-distro&lt;/code>, senza bisogno dei permessi di root.&lt;/p>
+&lt;h2 id="requisiti">Requisiti
+&lt;/h2>&lt;ul>
+&lt;li>&lt;strong>Termux&lt;/strong> installato (meglio dalla versione F-Droid per aggiornamenti regolari)&lt;/li>
+&lt;li>&lt;strong>Spazio libero&lt;/strong> sufficiente per l&amp;rsquo;installazione&lt;/li>
+&lt;li>&lt;strong>Connessione a Internet&lt;/strong> stabile&lt;/li>
+&lt;/ul>
+&lt;h2 id="aggiornare-termux">Aggiornare Termux
+&lt;/h2>&lt;p>Prima di tutto, apri Termux e aggiorna i pacchetti eseguendo:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pkg update &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> pkg upgrade
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="installa-proot-distro-con-pkg">installa proot-distro con pkg
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pkg install proot-distro
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="oppure-con-git">oppure con git
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pkg install git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/termux/proot-distro
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> proot-distro
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./install.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="visualizza-elenco-distro">visualizza elenco distro
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">proot-distro list
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/2.jpg"
+width="1080"
+height="2400"
+srcset="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/2_hu_36502e0a5a325d4f.jpg 480w, https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/2_hu_1acd3b4614339889.jpg 1024w"
+loading="lazy"
+alt="Image 2"
+class="gallery-image"
+data-flex-grow="45"
+data-flex-basis="108px"
+>&lt;/p>
+&lt;h2 id="installa-manjaro">installa manjaro
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">proot-distro install manjaro
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/3.jpg"
+width="1080"
+height="2400"
+srcset="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/3_hu_591024a84c8a0dcb.jpg 480w, https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/3_hu_3a7d78dbe18224cc.jpg 1024w"
+loading="lazy"
+alt="Image 3"
+class="gallery-image"
+data-flex-grow="45"
+data-flex-basis="108px"
+>&lt;/p>
+&lt;h2 id="login">login
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">proot-distro login manjaro
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="oppure">oppure
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pd login manjaro
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/4.jpg"
+width="1080"
+height="2400"
+srcset="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/4_hu_99199591359d387e.jpg 480w, https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/4_hu_8539eb48f4ece55c.jpg 1024w"
+loading="lazy"
+alt="Image 4"
+class="gallery-image"
+data-flex-grow="45"
+data-flex-basis="108px"
+>&lt;/p>
+&lt;h2 id="per-rimuovere-manjaro">Per rimuovere manjaro
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">proot-distro remove manjaro
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="guarda-il-video">Guarda il video
+&lt;/h2>&lt;p>&lt;a class="link" href="https://youtu.be/ONSiOiFmYEc?si=DtZX241fhVq5HX1M" target="_blank" rel="noopener"
+>Guarda il video su YouTube&lt;/a>&lt;/p>
+&lt;h1 id="io-uso-archlinux">Io uso archlinux
+&lt;/h1>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/5.jpg"
+width="1080"
+height="2400"
+srcset="https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/5_hu_163108bd39d5f5f5.jpg 480w, https://wifi-revenge.github.io/blog/p/installare-manjaro-su-termux-senza-root/5_hu_d157f3b4699f2b39.jpg 1024w"
+loading="lazy"
+alt="Image 5"
+class="gallery-image"
+data-flex-grow="45"
+data-flex-basis="108px"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Grazie per aver letto.&lt;/p></description></item><item><title>Clonare un RFID con Flipper Zero</title><link>https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/</link><pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/</guid><description>&lt;img src="https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/2.jpg" alt="Featured image of post Clonare un RFID con Flipper Zero" />&lt;p>In questo articolo, esploreremo come clonare un tag RFID utilizzando il Flipper Zero e come emularlo successivamente.&lt;/p>
+&lt;p>Facciamo un esempio pratico: immaginiamo un vigilante in servizio che deve completare vari giri di ronda, smarcando i tag RFID che si trovano in diversi punti.
+Come mostrato nell&amp;rsquo;immagine sottostante, con il Flipper Zero e un po&amp;rsquo; di astuzia, qualcuno potrebbe teoricamente &amp;ldquo;imbrogliare&amp;rdquo; e non effettuare il giro di ispezione reale.&lt;/p>
+&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/2.jpg"
+width="370"
+height="213"
+srcset="https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/2_hu_7b0fc2b38da09e81.jpg 480w, https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/2_hu_5b27f381484e1462.jpg 1024w"
+loading="lazy"
+alt="Image 2"
+class="gallery-image"
+data-flex-grow="173"
+data-flex-basis="416px"
+>&lt;/p>
+&lt;h2 id="foto-datix">Foto Datix
+&lt;/h2>&lt;p>&lt;img src="https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/3.jpg"
+width="2000"
+height="4000"
+srcset="https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/3_hu_e4564fb7a85a6f59.jpg 480w, https://wifi-revenge.github.io/blog/p/clonare-un-rfid-con-flipper-zero/3_hu_9cf16a654d9a9b9.jpg 1024w"
+loading="lazy"
+alt="Image 3"
+class="gallery-image"
+data-flex-grow="50"
+data-flex-basis="120px"
+>&lt;/p>
+&lt;h2 id="guarda-il-video-di-esempio">Guarda il video di esempio
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.dropbox.com/scl/fi/fsbv5di2e95ypzttv3nuu/Rfid.mp4?rlkey=ol4msudke6g4dgaf6qiewvpaq&amp;amp;e=1&amp;amp;st=h60vbejw&amp;amp;dl=0" target="_blank" rel="noopener"
+>Guarda il video&lt;/a>&lt;/p>
+&lt;p>&amp;ldquo;Alcuni istituti adottano l&amp;rsquo;applicazione SICEP sui dispositivi mobili, la quale non consente di aggirare il sistema poiché registra la posizione GPS.&amp;rdquo;&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Questo articolo è a scopo divulgativo e dimostrativo, per evidenziare i rischi associati alla sicurezza dei sistemi RFID.
+L&amp;rsquo;esempio pratico che abbiamo esplorato con il Flipper Zero non intende incoraggiare attività illecite, ma piuttosto sensibilizzare sull&amp;rsquo;importanza di proteggere e monitorare adeguatamente questi sistemi, evidenziando la necessità di soluzioni più sicure per prevenire possibili abusi.&lt;/p>
+&lt;p>Grazie per aver letto.&lt;/p></description></item><item><title>Archives</title><link>https://wifi-revenge.github.io/blog/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/archives/</guid><description/></item><item><title>Search</title><link>https://wifi-revenge.github.io/blog/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wifi-revenge.github.io/blog/search/</guid><description/></item></channel></rss>
