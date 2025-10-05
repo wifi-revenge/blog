@@ -2,7 +2,7 @@
 
 ![Welcome](https://img.shields.io/badge/Benvenuti%20nel%20mio%20blog-blueviolet?style=for-the-badge)
 
-## 🔗 Link Utili
+## 🔗 Link 
 
 [![Blog](https://img.shields.io/badge/Blog-WiFi--Revenge.github.io%2Fblog-blue?style=for-the-badge)](https://WiFi-Revenge.github.io/blog)
 
