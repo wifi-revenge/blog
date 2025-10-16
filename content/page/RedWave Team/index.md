@@ -14,6 +14,10 @@ menu:
 
 Per scoprire tutti i dettagli e leggere l'articolo completo, visita il seguente link:
 
+[I nostri articoli](https://www.redhotcyber.com/rubriche/alla-scoperta-del-wi-fi-attacco-e-difesa-delle-moderne-reti-wireless/)
+
+[Wi-Fi](https://www.redhotcyber.com/post/il-pericolo-delle-password-di-default-usiamo-wireshark-ed-hashcat-per-testare-la-sicurezza-del-modem/)
+
 [Il Wi-Fi: dalle origini di Marconi alla rete senza fili che conosciamo oggi](https://www.redhotcyber.com/post/il-wifi-dalle-origini-di-marconi-alla-rete-senza-fili-che-conosciamo-oggi/)
 
 
