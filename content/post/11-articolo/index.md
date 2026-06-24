@@ -73,19 +73,19 @@ Per validare il comportamento dello strumento sono stati utilizzati due ambienti
 ## 📱 Mobile test environment (Kali NetHunter) 
 
 Questo è il mio setup principale, che utilizzo dal 2014. È una soluzione mobile che posso portare sempre con me, anche in tasca, mantenendo capacità di analisi in mobilità.
-Il primo setup è basato con un telefono e un antenna su un Nexus 6P con Kali NetHunter, utilizzato come piattaforma mobile per l’analisi del traffico Wi-Fi.
+
+Il primo setup è basato su un telefono e un’antenna collegata a un Nexus 6P con Kali NetHunter, utilizzato come piattaforma mobile per l’analisi del traffico Wi-Fi.
 
 
 ![](nexus.jpg)
 
-Configurazione:
-
+Configurazione
 Dispositivo: Nexus 6P
 Sistema: Kali NetHunter
-Adattatore Wi-Fi compatibile con la monitor mode TP-Link TL-WN722N V.1
-Cavo otg
-GPS (facoltativo)
-Adattatore Bluetooth (facoltativo)
+Adattatore Wi-Fi (monitor mode): TP-Link TL-WN722N v1
+Cavo: OTG
+GPS: (facoltativo)
+Adattatore Bluetooth: (facoltativo)
 
 
 
