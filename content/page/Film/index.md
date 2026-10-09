@@ -1,7 +1,7 @@
 ---
 
 title: "Film"
-description: ""
+description: "Film visti e consigliati"
 slug: "film"
 menu:
 main:
@@ -11,6 +11,7 @@ icon: movie
 -----------
 
 ## 🎬 Film visti e consigliati
+
 
 
 
