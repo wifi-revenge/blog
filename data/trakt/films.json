@@ -1,8 +1,18 @@
 [
   {
+    "title": "Ad Astra",
+    "year": 2019,
+    "poster": "https://image.tmdb.org/t/p/w500/uxdQpoF8KQZ4VYcKwKFfeDJYeeJ.jpg"
+  },
+  {
     "title": "Alita: Battle Angel",
     "year": 2019,
     "poster": "https://image.tmdb.org/t/p/w500/98FJV1G1YEYTJ3nkJkBMPgPsMHc.jpg"
+  },
+  {
+    "title": "American Sniper",
+    "year": 2014,
+    "poster": "https://image.tmdb.org/t/p/w500/AdYOjcPT5PHyDsyxBgjCLtIepQR.jpg"
   },
   {
     "title": "Apex",
@@ -15,6 +25,31 @@
     "poster": "https://image.tmdb.org/t/p/w500/ssAmTJia73UR2tHeTJDXgCH6FG1.jpg"
   },
   {
+    "title": "Astronaut: The Last Push",
+    "year": 2012,
+    "poster": "https://image.tmdb.org/t/p/w500/hwzbgy9egSawsS87Je1x2ZhdAAi.jpg"
+  },
+  {
+    "title": "Automata",
+    "year": 2014,
+    "poster": "https://image.tmdb.org/t/p/w500/tcaVcwCZgXLzNblC0LResj6N8pe.jpg"
+  },
+  {
+    "title": "Bicentennial Man",
+    "year": 1999,
+    "poster": "https://image.tmdb.org/t/p/w500/3KMjL8FVAz4ncYVb5sH59LX0F8i.jpg"
+  },
+  {
+    "title": "Chappie",
+    "year": 2015,
+    "poster": "https://image.tmdb.org/t/p/w500/qwPivsWL5CWgbGlGGogQUDnapzj.jpg"
+  },
+  {
+    "title": "Coma",
+    "year": 2020,
+    "poster": "https://image.tmdb.org/t/p/w500/yxg0mPRXG191bh0fph4fX1S9Lr4.jpg"
+  },
+  {
     "title": "Disclosure Day",
     "year": 2026,
     "poster": "https://image.tmdb.org/t/p/w500/72Yx1uisLLJy5k2P5OzBkRdEIjp.jpg"
@@ -25,14 +60,39 @@
     "poster": "https://image.tmdb.org/t/p/w500/zolKD2yscZd86GviNa6pBPc6N9o.jpg"
   },
   {
+    "title": "Elysium",
+    "year": 2013,
+    "poster": "https://image.tmdb.org/t/p/w500/aRjuJuPXHtVs6YegfeeQWXGRs1E.jpg"
+  },
+  {
+    "title": "Event Horizon",
+    "year": 1997,
+    "poster": "https://image.tmdb.org/t/p/w500/hfuo1sN4pIv0zBPGjPiiddD9G7f.jpg"
+  },
+  {
     "title": "Ex Machina",
     "year": 2015,
     "poster": "https://image.tmdb.org/t/p/w500/qRFWr87YE1ENrmW8iEoHfcNjaPz.jpg"
   },
   {
+    "title": "First Blood",
+    "year": 1982,
+    "poster": "https://image.tmdb.org/t/p/w500/dff9LLsvZWA6fKDlVkWeayK04od.jpg"
+  },
+  {
     "title": "Frankenstein",
     "year": 2025,
     "poster": "https://image.tmdb.org/t/p/w500/73Lhoexx9xTjTBVsb5UUqqOzmH3.jpg"
+  },
+  {
+    "title": "Gravity",
+    "year": 2013,
+    "poster": "https://image.tmdb.org/t/p/w500/4pRXqT7wQmoH5sH6Z4WYmbAFG4t.jpg"
+  },
+  {
+    "title": "Heat",
+    "year": 1995,
+    "poster": "https://image.tmdb.org/t/p/w500/sbKoZGcyDHEhOQ6VntxP3jEJnIs.jpg"
   },
   {
     "title": "I, Robot",
@@ -43,6 +103,16 @@
     "title": "Interstellar",
     "year": 2014,
     "poster": "https://image.tmdb.org/t/p/w500/bMKiLh0mES4Uiococ240lbbTGXQ.jpg"
+  },
+  {
+    "title": "Long Distance",
+    "year": 2024,
+    "poster": "https://image.tmdb.org/t/p/w500/eAZytDr3dmq8q12tMamX601xkgf.jpg"
+  },
+  {
+    "title": "Lucy",
+    "year": 2014,
+    "poster": "https://image.tmdb.org/t/p/w500/oQIITXMMp9mEckfFst5hySZ8DAz.jpg"
   },
   {
     "title": "Minority Report",
@@ -60,9 +130,34 @@
     "poster": "https://image.tmdb.org/t/p/w500/5JgpKhwrdfoBDjb1zi9F7aDNL0P.jpg"
   },
   {
+    "title": "Passengers",
+    "year": 2016,
+    "poster": "https://image.tmdb.org/t/p/w500/pntX3eO4CmQmYjYBB6ZEkVgcfeE.jpg"
+  },
+  {
+    "title": "Prey",
+    "year": 2022,
+    "poster": "https://image.tmdb.org/t/p/w500/x0jBnUaKDxVYUI1myQ1MRiq6uMJ.jpg"
+  },
+  {
     "title": "Project Almanac",
     "year": 2015,
     "poster": "https://image.tmdb.org/t/p/w500/23jgaBZeiUOEm7MrayQh5eNnqV3.jpg"
+  },
+  {
+    "title": "Project Gemini",
+    "year": 2022,
+    "poster": "https://image.tmdb.org/t/p/w500/rFljUdOozFEv6HDHIFpFvcYW0ec.jpg"
+  },
+  {
+    "title": "Rambo: First Blood Part II",
+    "year": 1985,
+    "poster": "https://image.tmdb.org/t/p/w500/mRV0Ac9EJuMRsEso9fBbJr4lExZ.jpg"
+  },
+  {
+    "title": "Replicas",
+    "year": 2018,
+    "poster": "https://image.tmdb.org/t/p/w500/qWuUZ58TgYHgoNVlxIPtO60CIFW.jpg"
   },
   {
     "title": "Revolution OS",
@@ -70,9 +165,29 @@
     "poster": "https://image.tmdb.org/t/p/w500/h7oBhsEsiHUgZ1uflyqBafB6SoB.jpg"
   },
   {
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "poster": "https://image.tmdb.org/t/p/w500/yHPksncwQ3l9ZiKiArvgcU1dVig.jpg"
+  },
+  {
+    "title": "Self/less",
+    "year": 2015,
+    "poster": "https://image.tmdb.org/t/p/w500/txKS08ERGr4kpkWhyrubue0NU08.jpg"
+  },
+  {
+    "title": "Sniper: The White Raven",
+    "year": 2022,
+    "poster": "https://image.tmdb.org/t/p/w500/FJQ1gyiP9AxjQoZEbLNSOpHkIz.jpg"
+  },
+  {
     "title": "Source Code",
     "year": 2011,
     "poster": "https://image.tmdb.org/t/p/w500/cPjreWNgAdhGFN8rfNb6KIzpmjj.jpg"
+  },
+  {
+    "title": "Sunshine",
+    "year": 2007,
+    "poster": "https://image.tmdb.org/t/p/w500/4Fr3lDzTUQSgNr9BvecxI46FkH3.jpg"
   },
   {
     "title": "Supergirl",
@@ -80,9 +195,19 @@
     "poster": "https://image.tmdb.org/t/p/w500/s8JXiMG0skg5onZi49d7n2nuXjs.jpg"
   },
   {
+    "title": "Takedown",
+    "year": 2000,
+    "poster": "https://image.tmdb.org/t/p/w500/9JNL4FQbk7fmCUShL5BnPkvmV3N.jpg"
+  },
+  {
     "title": "Terminator 2: Judgment Day",
     "year": 1991,
     "poster": "https://image.tmdb.org/t/p/w500/orzgtkWWEHlSMcFm1p74ZvGqdz0.jpg"
+  },
+  {
+    "title": "The Astronaut",
+    "year": 2025,
+    "poster": "https://image.tmdb.org/t/p/w500/lP0SVWzHx6hto4aQcY2V7c5E6lD.jpg"
   },
   {
     "title": "The Code",
@@ -90,9 +215,19 @@
     "poster": "https://image.tmdb.org/t/p/w500/fvIEpbgUS45JLZg6OZpq6ke9wOI.jpg"
   },
   {
+    "title": "The Crow",
+    "year": 1994,
+    "poster": "https://image.tmdb.org/t/p/w500/1Avvy9i4cJTZeZr4KVkkmDkRiao.jpg"
+  },
+  {
     "title": "The Gorge",
     "year": 2025,
     "poster": "https://image.tmdb.org/t/p/w500/7IU0AhsnulBMEGauba755Snhcy4.jpg"
+  },
+  {
+    "title": "The Martian",
+    "year": 2015,
+    "poster": "https://image.tmdb.org/t/p/w500/ic1Ojv8jurZn4dFywHPBrvXMduf.jpg"
   },
   {
     "title": "The Matrix",
@@ -110,9 +245,29 @@
     "poster": "https://image.tmdb.org/t/p/w500/3oi7iQwFwSALSsZRtAOnRX4WUPp.jpg"
   },
   {
+    "title": "The Wall",
+    "year": 2017,
+    "poster": "https://image.tmdb.org/t/p/w500/8POAZwZpp24l1IgKKM8ZRAQ2kid.jpg"
+  },
+  {
+    "title": "The Wandering Earth",
+    "year": 2019,
+    "poster": "https://image.tmdb.org/t/p/w500/tXuQCgx69DxVgeTsU0TkruR3i9O.jpg"
+  },
+  {
+    "title": "Total Recall",
+    "year": 1990,
+    "poster": "https://image.tmdb.org/t/p/w500/4jofwwjYk7y5ACheSnWSzsAy5p0.jpg"
+  },
+  {
     "title": "Transcendence",
     "year": 2014,
     "poster": "https://image.tmdb.org/t/p/w500/5Ce66nOzkHUz5IyoOqpWgtjRXRB.jpg"
+  },
+  {
+    "title": "Vesper",
+    "year": 2022,
+    "poster": "https://image.tmdb.org/t/p/w500/uBdU5jMKzGJ61EGQchP672da3gD.jpg"
   },
   {
     "title": "Voyagers",
