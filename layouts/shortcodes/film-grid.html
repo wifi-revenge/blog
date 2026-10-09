@@ -1,0 +1,57 @@
+{{- $films := site.Data.trakt.films -}}
+
+<div class="film-grid">
+  {{- range $films }}
+    <article class="film-card">
+      {{- if .poster }}
+        <img class="film-poster" src="{{ .poster }}" alt="Locandina di {{ .title }}" loading="lazy">
+      {{- else }}
+        <div class="film-poster film-poster-placeholder">🎬</div>
+      {{- end }}
+      <div class="film-info">
+        <strong>{{ .title }}</strong>
+        {{- with .year }}
+          <span>{{ . }}</span>
+        {{- end }}
+      </div>
+    </article>
+  {{- end }}
+</div>
+
+<style>
+.film-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 22px 16px;
+  margin: 24px 0;
+}
+.film-card {
+  min-width: 0;
+  overflow: hidden;
+}
+.film-poster {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 9px;
+  background: var(--card-background, #e8e8e8);
+}
+.film-poster-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+.film-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 9px;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+.film-info span {
+  opacity: 0.7;
+}
+</style>
