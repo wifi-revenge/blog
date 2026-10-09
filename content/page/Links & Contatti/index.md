@@ -41,3 +41,34 @@ menu:
 comments: false
 ---
 
+
+
+<h2>📡 Wardriving</h2>
+
+<p>Le mie statistiche e le reti wireless raccolte.</p>
+
+<h3>WiGLE</h3>
+
+<a href="https://wigle.net" target="_blank" rel="noopener noreferrer">
+  <img
+    src="https://wigle.net/bi/4NgJGmAYyTxrVfrUwmCRXQ.png"
+    alt="WiGLE badge"
+    style="max-width: 100%; height: auto;"
+  >
+</a>
+
+<h3>WDGWars</h3>
+
+<p>
+  <a href="https://wdgwars.pl/" target="_blank" rel="noopener noreferrer">
+    WDGWars 
+  </a><br>
+  🦁 Vuoi unirti al team? Team code: <strong>N_lq7FW236Gk</strong>
+</p>
+
+
+
+<a href="https://wdgwars.pl/"><img src="https://wdgwars.pl/card/1627-EXFURC3H.svg" alt="WDGWars card" width="480" height="200"></a>
+
+
+
