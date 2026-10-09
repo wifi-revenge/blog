@@ -1,7 +1,7 @@
 ---
 
 title: "Film"
-description: "Film visti e consigliati"
+description: ""
 slug: "film"
 menu:
 main:
@@ -11,6 +11,7 @@ icon: movie
 -----------
 
 ## 🎬 Film visti e consigliati
+
 
 
 Qui raccolgo i film che ho visto, sincronizzati con il mio account Trakt.
