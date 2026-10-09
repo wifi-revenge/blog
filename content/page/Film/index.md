@@ -1,14 +1,13 @@
 ---
-
 title: "Film"
 description: "Film visti"
 slug: "film"
 menu:
-main:
-weight: 3
-params:
-icon: movie
------------
+    main:
+        weight: 3
+        params:
+            icon: movie
+---
 
 Qui raccolgo i film che ho visto, sincronizzati con il mio account Trakt.
 
