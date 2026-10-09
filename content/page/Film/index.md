@@ -1,16 +1,17 @@
 ---
 
 title: "Film"
-description: "I film che ho visto"
+description: "Film visti e consigliati"
 slug: "film"
 menu:
-    main:
-        weight: 3
-        params: 
-            icon: movie
----
+main:
+weight: 3
+params:
+icon: movie
+-----------
 
-## 🎬 I miei film visti
+## 🎬 Film visti e consigliati
+
 
 Qui raccolgo i film che ho visto, sincronizzati con il mio account Trakt.
 
