@@ -13,8 +13,7 @@ Qui raccolgo i film che ho visto, sincronizzati con il mio account Trakt.
 
 <!-- TRAKT_FILMS_START -->
 
-
-*Totale film visti: 57*
+*Totale film visti: 85*
 
 {{< film-grid >}}
 
