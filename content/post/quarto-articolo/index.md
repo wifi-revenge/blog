@@ -129,4 +129,4 @@ Una volta configurato, potrai iniziare a utilizzare Jellyfin per gestire e ripro
 Con questa configurazione, Jellyfin sarà pronto per essere utilizzato e potrai accedere al server multimediale da qualsiasi dispositivo sulla tua rete.
 
 ## Conclusione e supporto
-Jellyfin è ora configurato e pronto per essere utilizzato come server multimediale sul tuo Raspberry Pi. Se hai problemi con l'installazione o hai bisogno di supporto, puoi contattarmi via email a cri90.cg@gmail.com. Sarò felice di aiutarti! 😊
+Jellyfin è ora configurato e pronto per essere utilizzato come server multimediale sul tuo Raspberry Pi. Se hai problemi con l'installazione o hai bisogno di supporto, puoi contattarmi via email a erpressa.cg@gmail.com oppure su tg [@WIFIREVENGE](https://t.me/WIFIREVENGE) Sarò felice di aiutarti! 😊
