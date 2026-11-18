@@ -41,8 +41,21 @@ jobs:
 
             - name: Install Dart Sass
               run: |
-                  npm install --global sass
-                  sass --version
+                  DART_SASS_VERSION="1.108.2"
+                  mkdir -p "${HOME}/.local"
+
+                  curl -fsSL \
+                    "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" \
+                    -o "${RUNNER_TEMP}/dart-sass.tar.gz"
+
+                  tar -xzf "${RUNNER_TEMP}/dart-sass.tar.gz" \
+                    -C "${HOME}/.local"
+
+                  chmod -R a+rX "${HOME}/.local/dart-sass"
+
+                  echo "${HOME}/.local/dart-sass" >> "${GITHUB_PATH}"
+
+                  "${HOME}/.local/dart-sass/sass" --version
 
             - name: Build
               run: hugo --minify --gc
